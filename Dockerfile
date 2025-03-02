@@ -1,6 +1,6 @@
 FROM debian:latest
 
-# Installer les dépendances
+# Installer les dépendances nécessaires
 RUN apt-get update && \
     apt-get install -y \
     git \
@@ -18,5 +18,6 @@ RUN curl -LO "https://github.com/benoitpetit/duckduckGO-chat-cli/releases/downlo
     chmod +x duckduckgo-chat-cli_${DUCKDUCKGO_CLI_VERSION}_linux_amd64 && \
     mv duckduckgo-chat-cli_${DUCKDUCKGO_CLI_VERSION}_linux_amd64 /usr/local/bin/duckduckgo-chat-cli
 
+# Créer le répertoire de configuration et copier config.json
 RUN mkdir -p /root/.config/duckduckgo-chat-cli
 COPY config.json /root/.config/duckduckgo-chat-cli/config.json
