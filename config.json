@@ -1,0 +1,13 @@
+{
+  "tos_accepted": true,
+  "default_model": "gpt-4o-mini",
+  "export_dir": "/home/senerh/Documents/duckchat",
+  "last_update_time": "2025-03-01T12:45:37.418489182+01:00",
+  "search": {
+    "max_results": 10,
+    "include_snippet": true,
+    "max_retries": 3,
+    "retry_delay": 1
+  },
+  "show_menu": false
+}
